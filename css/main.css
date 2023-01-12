@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.svg {
+  width: 7rem;
+  height: 10rem;
+  fill: rgb(181, 3, 3);
+  background-color: antiquewhite;
+}/*# sourceMappingURL=main.css.map */
