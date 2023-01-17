@@ -4,7 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Vira Home</title>
 		<link rel="stylesheet" href="CSS/main.css" />
 		<link
 			rel="shortcut icon"
@@ -13,6 +19,60 @@
 		/>
 	</head>
 	<body>
+		<header class="header">
+			<nav class="navbar">
+				<ul class="navbar__menu short">
+					<li class="navbar__menu-item">
+						<a href="index.html" class="navbar__menu-link">Home</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#about" class="navbar__menu-link">About</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#expertise" class="navbar__menu-link">Expertise</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#workstation" class="navbar__menu-link">Workstation</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#team" class="navbar__menu-link">Team</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#contact" class="navbar__menu-link">Contact</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a href="#elements" class="navbar__menu-link">Elements</a>
+					</li>
+				</ul>
+				<a class="navbar__close">Close</a>
+			</nav>
+			<div class="header__head short">
+				<div class="header__logo">
+					<a class="header__link" href="index.html">
+						<svg class="icon icon-viacoin">
+							<use xlink:href="icons/symbol-defs.svg#icon-viacoin"></use>
+						</svg>
+					</a>
+				</div>
+
+				<label class="header__label">
+					<span class="header__label-state">MENU</span>
+					<svg class="header__label-icon">
+						<use
+							class="header__icon"
+							xlink:href="icons/symbol-defs.svg#icon-menu"
+						></use></svg
+				></label>
+				<input
+					class="header__checkbox hide"
+					type="checkbox"
+					name="menu"
+					id="menu"
+				/>
+			</div>
+
+			<div class="header__body"></div>
+		</header>
 		<script src="js/js.js"></script>
 	</body>
 </html>

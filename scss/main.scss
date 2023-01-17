@@ -1,24 +1,17 @@
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
+$color-main: #51c2b9;
+$color-black: #000;
+$color-white: #fff;
+
+@import "header";
+@import "base";
+@import "icon";
+@import "navbar";
+
+.short {
+	max-width: 1180px;
+	margin: 0 auto;
 }
 
-html {
-	scroll-behavior: smooth;
-
-	font-size: 62.5%; //1rem = 10px , 10px/16px = 62.5%
-}
-
-body {
-	box-sizing: border-box;
-}
-
-.svg {
-	width: 7rem;
-	height: 10rem;
-	fill: rgb(181, 3, 3);
-	background-color: antiquewhite;
+.hide {
+	display: none;
 }
