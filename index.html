@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Vira Home</title>
@@ -19,6 +19,8 @@
 		/>
 	</head>
 	<body>
+		<!--HEADER-->
+
 		<header class="header">
 			<nav class="navbar">
 				<ul class="navbar__menu short">
@@ -44,7 +46,6 @@
 						<a href="#elements" class="navbar__menu-link">Elements</a>
 					</li>
 				</ul>
-				<a class="navbar__close">Close</a>
 			</nav>
 			<div class="header__head short">
 				<div class="header__logo">
@@ -55,8 +56,8 @@
 					</a>
 				</div>
 
-				<label class="header__label">
-					<span class="header__label-state">MENU</span>
+				<label class="header__label" data-stateOpen>
+					<span class="header__label-text"> Menu </span>
 					<svg class="header__label-icon">
 						<use
 							class="header__icon"
@@ -71,8 +72,35 @@
 				/>
 			</div>
 
-			<div class="header__body"></div>
+			<div class="header__body">
+				<div class="header__body-content">
+					<h1 class="header__body-title">
+						<strong> WE ARE VIRA AGENCY</strong>
+					</h1>
+					<h2 class="header__body-subtitle">
+						Creative digital agency based in US
+					</h2>
+					<input class="btn" type="button" value="Explore us" />
+				</div>
+			</div>
 		</header>
+
+		<!-- ABOUT -->
+
+		<section class="about">
+			<div class="about__body">
+				<h2 class="about__title">ABOUT AGENCY</h2>
+				<p class="about__info">
+					Complimenten, bewonderend gefluit en lonkende blikken zijn enkele
+					risico’s die The Garment Club met zich meebrengt. Onze enige missie is
+					dat jij de best geklede man van de omgeving bent. Laat gratis een op
+					eden box samenstellen door je personal shopper en betaal.
+				</p>
+				<img class="about__signature" src="img/signature.png" alt="signature" />
+				<p class="about__footer">Vira Studio-ceo</p>
+			</div>
+		</section>
+
 		<script src="js/js.js"></script>
 	</body>
 </html>

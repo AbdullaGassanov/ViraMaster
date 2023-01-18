@@ -5,24 +5,14 @@ const btnNavbarClose = document.querySelector(".navbar__close"),
 	navbar = document.querySelector(".navbar"),
 	headerLabel = document.querySelector(".header__label"),
 	headerLabelState = document.querySelector(".header__label-state"),
-	headerIcon = document.querySelector(".header__icon");
+	headerIcon = document.querySelector(".header__icon"),
+	headerLabelText = document.querySelector(".header__label-text");
 
-headerPanel.addEventListener("click", (e) => {
-	let target = e.target;
-
-	console.log(target);
-});
-
-btnNavbarClose.addEventListener("click", () => {
-	console.log("test1");
-	navbar.style.cssText = "transform: translateY(-100%);";
-	headerLabelState.innerHTML = "Menu";
-	headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-menu");
-});
-
-headerLabel.addEventListener("click", () => {
-	console.log("test2");
-	navbar.style.cssText = "transform: translateY(0);position:relative;";
-	headerLabelState.innerHTML = "Close";
-	headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-x");
+headerPanel.addEventListener("click", () => {
+	navbar.classList.toggle("navbar__open");
+	if (navbar.classList.contains("navbar__open")) {
+		headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-x");
+	} else {
+		headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-menu");
+	}
 });

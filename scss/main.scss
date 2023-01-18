@@ -6,6 +6,7 @@ $color-white: #fff;
 @import "base";
 @import "icon";
 @import "navbar";
+@import "about";
 
 .short {
 	max-width: 1180px;
@@ -14,4 +15,21 @@ $color-white: #fff;
 
 .hide {
 	display: none;
+}
+
+.btn {
+	padding: 1.5rem 8rem;
+	font-family: Lora, sans-serif;
+	font-style: italic;
+	font-size: 1.4rem;
+	color: $color-white;
+	background-color: transparent;
+	border: 1px solid $color-white;
+	transition: 0.3s;
+
+	margin-bottom: 2rem;
+	&:hover {
+		background-color: $color-white;
+		color: $color-black;
+	}
 }

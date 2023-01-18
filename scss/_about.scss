@@ -1,0 +1,48 @@
+.about {
+	width: 100%;
+	max-height: max-content;
+	background-color: #f8f8f8;
+	text-align: center;
+
+	&__body {
+		padding: 6rem;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: 900;
+		color: $color-black;
+		position: relative;
+
+		margin-bottom: 8rem;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 5rem;
+			height: 0.5rem;
+			background-color: $color-main;
+		}
+	}
+
+	&__info {
+		font-family: Lora, sans-serif;
+		font-size: 1.6rem;
+		color: $color-black;
+		margin-bottom: 3rem;
+	}
+
+	&__signature {
+		margin-bottom: 2rem;
+	}
+
+	&__footer {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
