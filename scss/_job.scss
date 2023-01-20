@@ -1,0 +1,90 @@
+.job {
+	background-color: $color-white;
+	opacity: 0.8;
+	padding: 7rem 0;
+
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: 900;
+		position: relative;
+		margin-bottom: 10rem;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 4.5rem;
+			height: 0.6rem;
+			background-color: $color-main;
+		}
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-img {
+			background-color: $color-main;
+			padding: 5rem;
+			border-radius: 50%;
+			margin-bottom: 3rem;
+			transition: 0.2s;
+			position: relative;
+			&:hover {
+				scale: 1.2;
+			}
+		}
+
+		&-svg {
+		}
+
+		&-title {
+			font-size: 2.1rem;
+			font-weight: 900;
+			margin-bottom: 6rem;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -4rem;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 4rem;
+				height: 0.2rem;
+				background-color: $color-main;
+			}
+		}
+
+		&-text {
+			font-family: Lora, sans-serif;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__circle {
+		position: relative;
+		&::before {
+			content: "1";
+			position: absolute;
+			color: $color-black;
+			border: 3px solid $color-main;
+			padding: 7.3rem 7.5rem;
+			top: -1.5rem;
+			left: -1.5rem;
+			transition: 0.2s;
+			border-radius: 50%;
+		}
+	}
+}

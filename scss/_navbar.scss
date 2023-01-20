@@ -9,21 +9,28 @@
 	&__menu {
 		list-style: none;
 
-		&-item {
+		/* 	&-item {
 			padding: 2rem;
 			border-bottom: 1px solid #ccc;
 			&:last-child {
 				border-bottom: none;
 			}
-		}
+		} */
 
 		&-link {
+			display: block;
 			text-decoration: none;
 			color: $color-white;
 			font-size: 2.2rem;
 			transition: 0.2s;
+			padding: 2rem;
+			border-bottom: 1px solid #ccc;
+			&:last-child {
+				border-bottom: none;
+			}
 			&:hover {
 				color: $color-main;
+				text-decoration: underline;
 			}
 		}
 	}
