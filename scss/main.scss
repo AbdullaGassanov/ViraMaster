@@ -2,6 +2,47 @@ $color-main: #51c2b9;
 $color-black: #000;
 $color-white: #fff;
 
+@mixin title-bold {
+	font-size: 4rem;
+	font-weight: 900;
+	position: relative;
+	padding-bottom: 6rem;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -3rem;
+		width: 5rem;
+		height: 0.7rem;
+
+		background-color: $color-main;
+		margin-bottom: 5rem;
+	}
+}
+
+@mixin title-thin {
+	font-size: 2.1rem;
+	font-weight: 800;
+	margin-top: 5rem;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 6rem;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		width: 5rem;
+		height: 0.1rem;
+		background-color: $color-main;
+		margin-bottom: 4rem;
+	}
+}
+
 @import "header";
 @import "base";
 @import "icon";
@@ -9,7 +50,13 @@ $color-white: #fff;
 @import "about";
 @import "job";
 @import "expertise";
-
+@import "smblock";
+@import "workstation";
+@import "videoblock";
+@import "members";
+@import "subscribe";
+@import "contact";
+@import "footer";
 .row-mid {
 	max-width: 1180px;
 	margin: 0 auto;

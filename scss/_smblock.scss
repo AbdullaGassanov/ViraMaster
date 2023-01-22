@@ -1,0 +1,41 @@
+.smblock {
+	padding: 3rem 0;
+	text-align: center;
+	height: 35rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: $color-white;
+
+	background-image: linear-gradient(
+			to right,
+			rgba(black, 0.5),
+			rgba(black, 0.6)
+		),
+		url("../img/3.jpg");
+	background-position: left center;
+	background-size: cover;
+
+	&__icon {
+		width: 3.5rem;
+		height: 3.5rem;
+		opacity: 0.8;
+		fill: $color-white;
+		padding: 5rem 0;
+	}
+
+	&__title {
+		font-family: Lora, sans-serif;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 3rem;
+		padding-bottom: 2rem;
+	}
+	&__author {
+		font-family: Lora, sans-serif;
+		font-style: italic;
+		font-size: 2.2rem;
+	}
+}

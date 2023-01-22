@@ -1,0 +1,48 @@
+.workstation {
+	text-align: center;
+
+	&__content {
+		padding: 5rem 0;
+	}
+
+	&__title {
+		@include title-bold;
+
+		/* font-size: 4rem;
+		font-weight: 900;
+		position: relative;
+		padding-bottom: 6rem;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+			width: 5rem;
+			height: 0.7rem;
+			background-color: $color-main;
+			margin-bottom: 4rem;
+		} */
+	}
+
+	&__blocks {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__block {
+		margin-top: 4rem;
+		&-title {
+			@include title-thin;
+		}
+	}
+
+	&__paragraph {
+		font-size: 1.5rem;
+		font-family: Lora, sans-serif;
+		font-style: italic;
+		opacity: 0.5;
+	}
+}

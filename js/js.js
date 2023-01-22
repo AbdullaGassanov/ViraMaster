@@ -11,8 +11,10 @@ const btnNavbarClose = document.querySelector(".navbar__close"),
 headerPanel.addEventListener("click", () => {
 	navbar.classList.toggle("navbar__open");
 	if (navbar.classList.contains("navbar__open")) {
+		headerLabelText.innerHTML = "Close";
 		headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-x");
 	} else {
+		headerLabelText.innerHTML = "Menu";
 		headerIcon.setAttribute("xlink:href", "icons/symbol-defs.svg#icon-menu");
 	}
 });

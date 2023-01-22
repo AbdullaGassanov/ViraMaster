@@ -1,0 +1,21 @@
+.footer {
+	height: 20rem;
+	background-color: $color-black;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: $color-white;
+	font-size: 3rem;
+	font-style: italic;
+	font-family: Lora, sans-serif;
+
+	&__icon {
+		margin: 0;
+		padding: 0;
+		width: 2.35rem;
+		height: 2.35rem;
+		fill: $color-main;
+		transition: 0.2s;
+	}
+}

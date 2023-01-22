@@ -1,0 +1,40 @@
+.videoblock {
+	padding: 2rem 0;
+	height: 35rem;
+	background-image: linear-gradient(
+			to left,
+			rgba(black, 0.43),
+			rgba(black, 0.43)
+		),
+		url(../img/7.jpg);
+	background-size: cover;
+
+	color: $color-white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__txt {
+		display: flex;
+		align-items: center;
+
+		font-size: 2rem;
+		font-family: Lora;
+		font-style: italic;
+	}
+
+	&__icon {
+		padding: 0;
+		margin: 0;
+		width: 9.5rem;
+		height: 9.5rem;
+		fill: $color-white;
+		margin: 0 3rem;
+		transition: 0.2s;
+		&:hover {
+			fill: $color-black;
+			cursor: pointer;
+		}
+	}
+}
